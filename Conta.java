@@ -4,7 +4,16 @@ public class Conta {
 	int numero;
 	String titular;
 	
-	public void deposita(double valor) {
-		this.saldo = this.saldo + valor;
+	public void deposita(double valor) { //criando método deposita
+		this.saldo += valor;
+	}
+		
+	public boolean saca(double valor) { 
+		if(this.saldo >= valor) { 
+	        this.saldo -= valor; 
+	        return true;
+		} else {
+	    return false;
+		}
 	}
 }
