@@ -33,5 +33,10 @@ public class CriaConta {
 		
 		segundaConta.saldo += 400; //Acrescentando valor ao atributo saldo do objeto segundaConta
 		System.out.println(segundaConta.saldo);
+		
+		Conta terceiraConta = primeiraConta; //referência ao mesmo objeto
+		terceiraConta.saldo = 475;
+		System.out.println(terceiraConta);
+		System.out.println(primeiraConta); //ambos saem com mesmo código pois são referências do mesmo objeto
 	}
 }
